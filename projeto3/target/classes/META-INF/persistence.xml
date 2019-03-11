@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+	<persistence-unit name="TREINA_PU" transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<!-- <class>com.stefanini.projeto.model.Dono</class>
+		<class>com.stefanini.projeto.model.Cachorro</class>
+		<class>com.stefanini.projeto.model.CachorroCor</class>
+		<class>com.stefanini.projeto.model.CachorroCorPK</class>
+		<class>com.stefanini.projeto.model.Cor</class> -->
+
+		<properties>
+
+			<property name="hibernate.connection.username" value="treina2019" />
+			<property name="hibernate.connection.password" value="treina2019" />
+			
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://db4free.net:3306/treina2019" />
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider" />
+			
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="true" />
+			
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+		</properties>
+
+	</persistence-unit>
+</persistence>
