@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.stefanini.projeto.enums.SituacaoEnum;
 
 @Entity
@@ -34,6 +35,7 @@ public class Dono implements Serializable{
 	private SituacaoEnum situacao;
 
 	@OneToMany(mappedBy = "dono")
+	@JsonIgnoreProperties("dono")
 	private List<Cachorro> cachorros;
 
 	public Dono() {
