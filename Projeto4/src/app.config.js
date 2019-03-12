@@ -6,7 +6,7 @@ export default function routing($stateProvider, $urlRouterProvider) {
         url: '/home',
         templateUrl: './modulos/home/home.view.html',
         controller: 'HomeController',
-        controllerAs: 'home'
+        controllerAs: 'vm'
       }
       $stateProvider.state(homeState);
       
@@ -15,7 +15,7 @@ export default function routing($stateProvider, $urlRouterProvider) {
         url: '/dono',
         templateUrl: './modulos/dono/dono.view.html',
         controller: 'DonoController',
-        controllerAs: 'dono'
+        controllerAs: 'vm'
       }
       $stateProvider.state(donoState);
       

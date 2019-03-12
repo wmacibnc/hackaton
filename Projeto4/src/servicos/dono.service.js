@@ -4,8 +4,9 @@ class DonoService {
 
     constructor($http) {
         this.$http = $http;
-        const apiBase = "http://localhost:8080/projeto3/api/";
-        this.path =  apiBase + "dono";
+        //const apiBase = "http://localhost:9090/projeto/api";
+        const apiBase = "http://localhost:8080";
+        this.path =  apiBase + "/dono";
     }
     
     getDonos() {
